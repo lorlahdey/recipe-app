@@ -1,16 +1,25 @@
 import React from 'react'
 
-const MealItem = ({ id, foodName, foodImage, foodDesc, foodPrep}) => {
+
+
+const MealItem = ({ foodName, foodImage, foodDesc, foodPrep}) => {
+
     return (
         <div className='meal'>
             <div>
                 <img src={foodImage} alt="" />
             </div>
             <h3>{foodName}</h3>
-            <p><strong>{foodDesc}</strong></p>
+            <p>{foodDesc}</p>
             
             <div className='mode-of-preparation'>
-                <p>{foodPrep}</p>
+                <h4>Mode of Preparation</h4>
+                <ol>
+                    {foodPrep.map((items, index) => 
+                        <li key={index}>{items}</li>
+                    )}
+                    
+                </ol>
             </div>
         </div>
     )
