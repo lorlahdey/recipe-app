@@ -149,7 +149,7 @@
   background-color: #fef68a;
   border-radius: 15px;
   padding: 1.5rem;
-  width: 70%;
+  width: 80%;
   margin-bottom: 20px;
   box-shadow: 1px 0 10px 0 #afadad;
 }
@@ -159,7 +159,6 @@
 }
 .meal p {
   line-height: 28px;
-  /* overflow-wrap: break-word; */
 }
 .meal img {
   width: 100%;
@@ -167,4 +166,12 @@
 }
 .mode-of-preparation {
   margin: 10px 0;
+}
+.mode-of-preparation ol {
+  padding: 0 10px;
+}
+.mode-of-preparation li {
+  margin: 10px 0;
+  line-height: 25px;
+  /* list-style-type: square; */
 }
